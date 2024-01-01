@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        #header {
+            padding: 100px;
+            background-color: rgb(58, 44, 44);
+            color: white;
+            text-align: center;
+            font-family: 'Times New Roman', 'Georgia', 'Garamond', serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(58, 44, 44);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: grey;
+        }
+
+        @media screen and (max-width: 600px) {
+            ul.topnav li.right,
+            ul.topnav li {
+                float: none;
+            }
+        }
+
+       
+
+        .image {
+            background-image: url('https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 90%;
+            height: 400px;
+            opacity: 100%;
+            margin-left: 70px;
+        }
+
+        input[type=text] {
+            width: 138px;
+            color: black;
+            box-sizing: border-box;
+            border: 3px solid rgb(58, 44, 44);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: rgb(110, 69, 69);
+            box-shadow: 2px 2px #6b5252;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+        .centered {
+  position: absolute;
+  text-align: center;
+  top: 85%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding:16px 15px;
+  margin:auto;
+  background-color:white;
+  opacity:80%;
+}
+.button {
+      display: inline-block;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #092131;
+      opacity: 100%;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect */
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+
+        #footer {
+            border: 1px solid rgba(0, 0, 0, 0.932);
+            padding: 15px 16px;
+            background-color: rgb(58, 44, 44);
+            margin: auto;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="header">My First Portfolio Web Page</h1>
+    <ul>
+        <li><a href="https://ue.edu.pk/" target="_blank">My University</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Cv</a></li>
+        <li><a href="">Resume</a></li>
+        <li><a href="https://madihamalghani.blogspot.com/" target="_blank">My Blog</a></li>
+        <li style="float:right;"> <form><input type="text" name="search" placeholder="Search.."></form></li>
+    </ul>
+    <br><br>
+
+    <div>
+        <img class="image" src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849825_1280.jpg" alt="My web picture" >
+        <h1 class="centered" style="font-family: 'Times New Roman','Georgia','Garamond',serif;">I am a Web Developer. Do you want my services:
+        <br>   <a href="#" class="button">Click Here</a></h1>
+ 
+     </div>
+     <br>
+    <br><p id="footer">This is the footer of the page</p>
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright @Madiha Fatima</div>
+    
+</body>
+</html>
